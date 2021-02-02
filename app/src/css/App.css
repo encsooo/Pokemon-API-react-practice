@@ -1,0 +1,193 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* General style */
+
+body {
+  background-color: rgb(206, 223, 202);
+}
+
+.loading-text {
+  font-family: cursive;
+  color: blueviolet;
+  font-size: 35px;
+}
+
+.nav-ul {
+  list-style: none;
+  text-align: right;
+  position: absolute;
+  right: 20px;
+  top: 10px;
+}
+
+.nav-ul a {
+  text-decoration: none;
+  color: rgb(255, 217, 0);
+}
+
+header {
+  font-size: 35px;
+  background-color: #ef5350;
+  height: 150px;
+  margin-bottom: 35px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 20px;
+  color: rgb(46, 39, 39);
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 14px;
+  background-color: cadetblue;
+  height: 45px;
+  text-align: right;
+}
+
+/* Styling the pokedex page and popup */
+
+.pokedex {
+  position: absolute;
+  height: 80%;
+  left: 5px;
+  top: 5px;
+  opacity: 0.8;
+}
+
+.main-page {
+  margin-bottom: 50px;
+}
+
+.poki-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.card {
+  margin: 15px;
+  padding: 18px;
+  background-color: rgb(135, 199, 200);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.card:hover {
+  background-color: rgb(168, 249, 250);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.card img {
+  width: 12em;
+  height: auto;
+}
+
+.poki-container a {
+  text-decoration: none;
+}
+
+.btn-container {
+  display: flex;
+  padding: 30px;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+button {
+  background-color: #ef5350;
+  padding: 10px 20px;
+  border: 0;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: bold;
+  border-bottom-right-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+button:hover {
+  padding: 12px 22px;
+  background-color: #c35b5a;
+  color: rgb(242, 253, 239);
+  transition: all 0.3s;
+}
+
+.please {
+  font-size: 40px;
+  padding: 20px;
+}
+
+.popup {
+  width: 600px;
+  height: 330px;
+  padding: 10px 25px 0;
+  background-color: rgb(135, 199, 200);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.popup img {
+  height: 220px;
+}
+
+.popup:hover {
+  background-color: rgb(168, 249, 250);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.popup:hover {
+  cursor: pointer;
+}
+
+.popup-poki {
+  display: flex;
+  text-align: right;
+}
+
+/* styling the About page */
+
+.about-container {
+  padding: 50px;
+  text-align: center;
+}
+
+.about-container h1,
+.about-container h4,
+.about-container p {
+  margin: 20px;
+}
+
+.pika-img {
+  width: 300px;
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  margin-left: 30px;
+  margin-top: 5px;
+}
+
+@keyframes floating {
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, 15px);
+  }
+  100% {
+    transform: translate(0, -0px);
+  }
+}
